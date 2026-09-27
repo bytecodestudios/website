@@ -1,8 +1,10 @@
+'use client';
 import { Github, MessageCircle, Youtube, BookOpen, Mail } from 'lucide-react';
 import Logo from './Logo';
-import { site, nav } from '@/config/site';
+import { useContent } from './ContentProvider';
 
 export default function Footer() {
+  const { site, nav } = useContent();
   return (
     <footer className="relative z-10 border-t border-white/5 bg-bg-soft/60 backdrop-blur">
       <div className="container-px py-14">
@@ -10,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <a href="#top" className="inline-flex items-center gap-2.5">
               <Logo className="h-8 w-8" />
-              <span className="text-base font-semibold tracking-tight text-white">{site.name}</span>
+              <span className="font-display text-lg font-bold uppercase tracking-wide text-white">{site.name}</span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/55">
               {site.tagline}
@@ -42,7 +44,6 @@ export default function Footer() {
               <li><a href={site.github}  target="_blank" rel="noreferrer" className="text-white/65 hover:text-white">Open source on GitHub</a></li>
               <li><a href={site.docs}    target="_blank" rel="noreferrer" className="text-white/65 hover:text-white">Documentation</a></li>
               <li><a href={site.store}   target="_blank" rel="noreferrer" className="text-white/65 hover:text-white">Marketplace</a></li>
-              <li><a href={`mailto:${site.email}`} className="text-white/65 hover:text-white">{site.email}</a></li>
             </ul>
           </div>
         </div>

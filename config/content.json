@@ -1,0 +1,1189 @@
+{
+  "site": {
+    "name": "Bytecode Studios",
+    "short": "Bytecode",
+    "tagline": "A team of developers and designers building meaningful digital solutions: web platforms, automation, tools, bots and game resources that people actually use.",
+    "url": "https://bytecodestudios.com",
+    "email": "connect@bytecodestudios.com",
+    "discord": "https://discord.gg/qxGPARNwNP",
+    "github": "https://github.com/bytecodestudios",
+    "youtube": "https://youtube.com/@bytecodestudios",
+    "docs": "https://docs.bytecodestudios.com",
+    "store": "https://store.bytecodestudios.com"
+  },
+  "hero": {
+    "eyebrow": "Innovating the future of code · est. 2024",
+    "titleTop": "Meaningful software,",
+    "titleBottom": "built by people who care."
+  },
+  "nav": [
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Team",
+      "href": "#team"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "Portfolio",
+      "href": "#portfolio"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Team members",
+      "value": 5,
+      "suffix": ""
+    },
+    {
+      "label": "Open-source projects",
+      "value": 46,
+      "suffix": "+"
+    },
+    {
+      "label": "GitHub stars",
+      "value": 737,
+      "suffix": "+"
+    },
+    {
+      "label": "Community members",
+      "value": 9500,
+      "suffix": "+"
+    }
+  ],
+  "sections": {
+    "about": {
+      "eyebrow": "About Bytecode Studios",
+      "title": "A team that builds things that matter.",
+      "lede": "Bytecode Studios is a team of independent developers and designers. We build digital solutions end to end, from web platforms and internal tools to automation, bots and game resources, and share much of it with the community as open source."
+    },
+    "team": {
+      "eyebrow": "The Team",
+      "title": "Meet the people behind Bytecode.",
+      "lede": "Each member brings their own speciality and brand. Click a card to see their work, links, and how to reach them directly."
+    },
+    "projects": {
+      "eyebrow": "Open Source",
+      "title": "Built in the open, for everyone.",
+      "lede": "Real projects from our team's GitHub: web apps, desktop tools, AI utilities and FiveM resources. Use them, fork them, contribute back."
+    },
+    "services": {
+      "eyebrow": "What we build",
+      "title": "Digital solutions, end to end.",
+      "lede": "From a single feature to a full platform, we plan, design, build and support software that solves real problems."
+    },
+    "portfolio": {
+      "eyebrow": "Portfolio & Case Studies",
+      "title": "Work we're proud of.",
+      "lede": "A selection of engagements and the outcomes that mattered to each client."
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What people say.",
+      "lede": ""
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions, answered.",
+      "lede": ""
+    },
+    "contact": {
+      "eyebrow": "Start a project",
+      "title": "Tell us what you're building.",
+      "lede": "Send us an inquiry and it lands straight in our team Discord. We reply within 24h on business days."
+    }
+  },
+  "about": {
+    "pillars": [
+      {
+        "icon": "Heart",
+        "title": "Purpose over hype",
+        "desc": "We build software that solves a real problem for real people, and measure success by how useful it is."
+      },
+      {
+        "icon": "Zap",
+        "title": "Built to last",
+        "desc": "Clean architecture, documentation and support. Production-grade by default, even the free stuff."
+      },
+      {
+        "icon": "Users",
+        "title": "A team, not a factory",
+        "desc": "Every member runs their own craft. Together we take on work no single developer could."
+      }
+    ],
+    "focus": [
+      {
+        "icon": "Globe",
+        "title": "Web Platforms",
+        "desc": "Websites, dashboards and full-stack web apps built on modern frameworks."
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Apps & Desktop",
+        "desc": "Cross-platform apps, launchers and desktop utilities."
+      },
+      {
+        "icon": "Sparkles",
+        "title": "AI & Automation",
+        "desc": "AI-assisted tools, workflows and integrations that remove repetitive work."
+      },
+      {
+        "icon": "Bot",
+        "title": "Bots & Integrations",
+        "desc": "Discord bots, webhooks and third-party API integrations."
+      },
+      {
+        "icon": "ServerCog",
+        "title": "Backend & APIs",
+        "desc": "Reliable APIs, databases and services engineered to scale."
+      },
+      {
+        "icon": "Palette",
+        "title": "UI / UX Design",
+        "desc": "Interfaces, design systems and brand-aligned experiences."
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Game Resources",
+        "desc": "FiveM scripts, systems and in-game UIs for roleplay communities."
+      },
+      {
+        "icon": "Wrench",
+        "title": "Developer Tooling",
+        "desc": "CLIs, templates and tools that make development faster."
+      }
+    ]
+  },
+  "roles": [
+    "All",
+    "Core Team",
+    "Contributor"
+  ],
+  "team": [
+    {
+      "id": "cadburry",
+      "name": "Cadburry",
+      "role": "Core Team",
+      "tags": [
+        "Core Team",
+        "Full-stack",
+        "FiveM"
+      ],
+      "avatar": "https://github.com/cadburry6969.png",
+      "bio": "Builds gameplay systems, desktop launchers and web tooling, with dozens of open-source FiveM resources used by communities worldwide.",
+      "links": {
+        "store": "https://cadburryscripts.store/",
+        "tebex": "https://cadburry.tebex.io/",
+        "github": "https://github.com/cadburry6969",
+        "support": "https://discord.gg/qxGPARNwNP"
+      },
+      "featured": [
+        "cad-drugsales",
+        "cad-tax",
+        "cad-postalop",
+        "qb-weaponsonback"
+      ]
+    },
+    {
+      "id": "snappy",
+      "name": "Snappy",
+      "role": "Core Team",
+      "tags": [
+        "Core Team",
+        "Web Apps",
+        "FiveM"
+      ],
+      "avatar": "https://github.com/j5singh.png",
+      "bio": "Full-stack developer working across React, Node.js and game resources, from academic platforms to in-game systems.",
+      "links": {
+        "tebex": "https://snappy.tebex.io/",
+        "portfolio": "https://linktr.ee/whosnappy",
+        "github": "https://github.com/j5singh",
+        "support": "https://discord.gg/qnGMgPBzqe"
+      },
+      "featured": [
+        "grade-chain"
+      ]
+    },
+    {
+      "id": "kartik",
+      "name": "Kartik",
+      "role": "Core Team",
+      "tags": [
+        "Core Team",
+        "TypeScript",
+        "FiveM"
+      ],
+      "avatar": "https://github.com/kartik1410.png",
+      "bio": "Builds TypeScript UIs and economy systems, from in-game laptop apps to loan and finance resources.",
+      "links": {
+        "store": "https://kartikscripts.store/",
+        "tebex": "https://kartik-scripts.tebex.io/",
+        "portfolio": "https://linktr.ee/kartik3856",
+        "github": "https://github.com/kartik1410",
+        "support": "https://discord.gg/T6AXd2eWdH"
+      },
+      "featured": [
+        "kartik-loansystem",
+        "laptop_custom_app_template"
+      ]
+    },
+    {
+      "id": "butterchilly",
+      "name": "Butter Chilly",
+      "role": "Core Team",
+      "tags": [
+        "Core Team",
+        "AI & Python",
+        "FiveM"
+      ],
+      "avatar": "https://github.com/kavyasingh8.png",
+      "bio": "Works across AI tooling, TypeScript utilities and game resources, from resume analysers to live screen capture.",
+      "links": {
+        "store": "https://butterscripts.store",
+        "github": "https://github.com/kavyasingh8",
+        "support": "https://discord.gg/2pGkE8SWrM"
+      },
+      "featured": [
+        "butter-drugtables",
+        "zoned-emotes",
+        "butter-methlab",
+        "screencapture-live"
+      ]
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "role": "Contributor",
+      "tags": [
+        "Contributor"
+      ],
+      "avatar": "https://github.com/GuardianOP.png",
+      "bio": "Contributor to Bytecode Studios projects.",
+      "links": {
+        "github": "https://github.com/GuardianOP"
+      },
+      "featured": []
+    }
+  ],
+  "projectCategories": [
+    "All",
+    "Web Apps",
+    "AI & Automation",
+    "Desktop & Tools",
+    "FiveM"
+  ],
+  "projects": [
+    {
+      "id": "fivem-launcher",
+      "name": "fivem-launcher",
+      "description": "A Launcher made for Fivem Servers",
+      "category": "Desktop & Tools",
+      "platform": "C#",
+      "language": "C#",
+      "stars": 15,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/fivem-launcher",
+        "download": "https://github.com/cadburry6969/fivem-launcher/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "grade-chain",
+      "name": "grade-chain",
+      "description": "Electronic grade system for schools and universities, built with a React front-end, Node.js back-end and blockchain-backed records.",
+      "category": "Web Apps",
+      "platform": "TypeScript",
+      "language": "TypeScript",
+      "stars": 0,
+      "owner": "snappy",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/j5singh/grade-chain",
+        "download": "https://github.com/j5singh/grade-chain/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "screencapture-live",
+      "name": "screencapture-live",
+      "description": "Live screen-capture streaming tool built with TypeScript.",
+      "category": "Web Apps",
+      "platform": "TypeScript",
+      "language": "TypeScript",
+      "stars": 0,
+      "owner": "butterchilly",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kavyasingh8/screencapture-live",
+        "download": "https://github.com/kavyasingh8/screencapture-live/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "resume-ats-expert--main",
+      "name": "Resume-ATS-Expert--main",
+      "description": "AI-assisted resume analyser that scores resumes against ATS criteria and job descriptions.",
+      "category": "AI & Automation",
+      "platform": "Python",
+      "language": "Python",
+      "stars": 0,
+      "owner": "butterchilly",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kavyasingh8/Resume-ATS-Expert--main",
+        "download": "https://github.com/kavyasingh8/Resume-ATS-Expert--main/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-drugsales",
+      "name": "cad-drugsales",
+      "description": "NPC Drug Sales [standalone]",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 93,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-drugsales",
+        "download": "https://github.com/cadburry6969/cad-drugsales/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-tax",
+      "name": "cad-tax",
+      "description": "Simple Tax System For FiveM",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 78,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-tax",
+        "download": "https://github.com/cadburry6969/cad-tax/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-postalop",
+      "name": "cad-postalop",
+      "description": "Postal OP Delivery [QBCore]",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 57,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-postalop",
+        "download": "https://github.com/cadburry6969/cad-postalop/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "qb-weaponsonback",
+      "name": "qb-weaponsonback",
+      "description": "Weapon on Back for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 46,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/qb-weaponsonback",
+        "download": "https://github.com/cadburry6969/qb-weaponsonback/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-gundrop",
+      "name": "cad-gundrop",
+      "description": "Item Air drop System",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 46,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-gundrop",
+        "download": "https://github.com/cadburry6969/cad-gundrop/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "kartik-loansystem",
+      "name": "kartik-loansystem",
+      "description": "Loan and credit system for FiveM servers with repayments and interest.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 34,
+      "owner": "kartik",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kartik1410/kartik-loansystem",
+        "download": "https://github.com/kartik1410/kartik-loansystem/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-radio",
+      "name": "cad-radio",
+      "description": "Radio with member list (pma-voice)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 30,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-radio",
+        "download": "https://github.com/cadburry6969/cad-radio/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-chopshop",
+      "name": "cad-chopshop",
+      "description": "Vehicle chop shop job for FiveM. Strip stolen cars for parts and cash.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 29,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-chopshop",
+        "download": "https://github.com/cadburry6969/cad-chopshop/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-headbag",
+      "name": "cad-headbag",
+      "description": "Headbag for FiveM servers (Standalone)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 26,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-headbag",
+        "download": "https://github.com/cadburry6969/cad-headbag/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-clothing",
+      "name": "cad-clothing",
+      "description": "Usable Items based clothing (clothing components)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 25,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-clothing",
+        "download": "https://github.com/cadburry6969/cad-clothing/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-illegaldelivery",
+      "name": "cad-illegaldelivery",
+      "description": "Illegal Deliveries (Drugs, Weapon, etc)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 24,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-illegaldelivery",
+        "download": "https://github.com/cadburry6969/cad-illegaldelivery/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-fightring",
+      "name": "cad-fightring",
+      "description": "Boxing Ring using ps-buffs for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 24,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-fightring",
+        "download": "https://github.com/cadburry6969/cad-fightring/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "vehiclewipe",
+      "name": "vehiclewipe",
+      "description": "FiveM Server Vehicle Wipe with Timer",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 19,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/vehiclewipe",
+        "download": "https://github.com/cadburry6969/vehiclewipe/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-diving",
+      "name": "cad-diving",
+      "description": "Sunken Ship Diving Script for QBCore (Legacy Inspired)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 19,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-diving",
+        "download": "https://github.com/cadburry6969/cad-diving/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-cooldown",
+      "name": "cad-cooldown",
+      "description": "Robbery Cooldown (standalone)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 17,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-cooldown",
+        "download": "https://github.com/cadburry6969/cad-cooldown/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-truckerjob",
+      "name": "cad-truckerjob",
+      "description": "A TruckerJob for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 17,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-truckerjob",
+        "download": "https://github.com/cadburry6969/cad-truckerjob/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-blipcreator",
+      "name": "cad-blipcreator",
+      "description": "Create blip on the go (standalone)",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 16,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-blipcreator",
+        "download": "https://github.com/cadburry6969/cad-blipcreator/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-garbage",
+      "name": "cad-garbage",
+      "description": "Garbage Job (Waste Collector) for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 16,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-garbage",
+        "download": "https://github.com/cadburry6969/cad-garbage/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-keys",
+      "name": "cad-keys",
+      "description": "Vehiclekeys with Metadata [QB]",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 15,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-keys",
+        "download": "https://github.com/cadburry6969/cad-keys/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-mining",
+      "name": "cad-mining",
+      "description": "A Mining Job for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 11,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-mining",
+        "download": "https://github.com/cadburry6969/cad-mining/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-tuners",
+      "name": "cad-tuners",
+      "description": "Tuner Catalogue and Vehicle Give/Test for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "JavaScript",
+      "stars": 11,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-tuners",
+        "download": "https://github.com/cadburry6969/cad-tuners/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-afk",
+      "name": "cad-afk",
+      "description": "Standalone AFK system which checks mouse movements",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 11,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-afk",
+        "download": "https://github.com/cadburry6969/cad-afk/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "fivem-garba-lights",
+      "name": "fivem-garba-lights",
+      "description": "Just some Lighting for Navaratri in FiveM [MAP]",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 8,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/fivem-garba-lights",
+        "download": "https://github.com/cadburry6969/fivem-garba-lights/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-climate",
+      "name": "cad-climate",
+      "description": "Climate Controls & Sync with zones",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 6,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-climate",
+        "download": "https://github.com/cadburry6969/cad-climate/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-pedspawner",
+      "name": "cad-pedspawner",
+      "description": "Configurable ped spawner for FiveM.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 6,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-pedspawner",
+        "download": "https://github.com/cadburry6969/cad-pedspawner/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cc-notify",
+      "name": "cc-notify",
+      "description": "Notification used on my server",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "HTML",
+      "stars": 6,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cc-notify",
+        "download": "https://github.com/cadburry6969/cc-notify/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-notify",
+      "name": "cad-notify",
+      "description": "Just another notification system",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "CSS",
+      "stars": 6,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-notify",
+        "download": "https://github.com/cadburry6969/cad-notify/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-jobblips",
+      "name": "cad-jobblips",
+      "description": "Dynamic job-based map blips for FiveM.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 5,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-jobblips",
+        "download": "https://github.com/cadburry6969/cad-jobblips/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "butter-drugtables",
+      "name": "Butter-Drugtables",
+      "description": "Advanced Drug Table Script For QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 5,
+      "owner": "butterchilly",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kavyasingh8/Butter-Drugtables",
+        "download": "https://github.com/kavyasingh8/Butter-Drugtables/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-weaponwheel",
+      "name": "cad-weaponwheel",
+      "description": "PvP Weapon Wheel for FiveM",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "JavaScript",
+      "stars": 4,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-weaponwheel",
+        "download": "https://github.com/cadburry6969/cad-weaponwheel/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-miner",
+      "name": "cad-miner",
+      "description": "Mining job integrated with snappy-phone party system",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 4,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-miner",
+        "download": "https://github.com/cadburry6969/cad-miner/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-carplay",
+      "name": "cad-carplay",
+      "description": "CarPlay music with playlists & queue for FiveM",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "JavaScript",
+      "stars": 2,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-carplay",
+        "download": "https://github.com/cadburry6969/cad-carplay/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "laptop_custom_app_template",
+      "name": "laptop_custom_app_template",
+      "description": "TypeScript template for building custom apps inside an in-game laptop UI.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "TypeScript",
+      "stars": 2,
+      "owner": "kartik",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kartik1410/laptop_custom_app_template",
+        "download": "https://github.com/kartik1410/laptop_custom_app_template/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "zoned-emotes",
+      "name": "zoned-emotes",
+      "description": "Zoned-emotes For Standalone/QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 2,
+      "owner": "butterchilly",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kavyasingh8/zoned-emotes",
+        "download": "https://github.com/kavyasingh8/zoned-emotes/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-motels",
+      "name": "cad-motels",
+      "description": "Motel System for QBCore using ox_lib & ox_target",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 1,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-motels",
+        "download": "https://github.com/cadburry6969/cad-motels/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "butter-methlab",
+      "name": "Butter-Methlab",
+      "description": "Meth lab production script for FiveM.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 1,
+      "owner": "butterchilly",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kavyasingh8/Butter-Methlab",
+        "download": "https://github.com/kavyasingh8/Butter-Methlab/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-intercom",
+      "name": "cad-intercom",
+      "description": "Building intercom system for FiveM.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 0,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-intercom",
+        "download": "https://github.com/cadburry6969/cad-intercom/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-radiostation",
+      "name": "cad-radiostation",
+      "description": "In-game radio station broadcasting for FiveM.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 0,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-radiostation",
+        "download": "https://github.com/cadburry6969/cad-radiostation/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "scoreboard",
+      "name": "scoreboard",
+      "description": "Standalone Scoreboard",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 0,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/scoreboard",
+        "download": "https://github.com/cadburry6969/scoreboard/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-scoreboard",
+      "name": "cad-scoreboard",
+      "description": "Playerlist for QBCore",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 0,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-scoreboard",
+        "download": "https://github.com/cadburry6969/cad-scoreboard/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "cad-xvehshop",
+      "name": "cad-xvehshop",
+      "description": "Exclusive Priority Dealership [QBCore]",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 0,
+      "owner": "cadburry",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/cadburry6969/cad-xvehshop",
+        "download": "https://github.com/cadburry6969/cad-xvehshop/releases",
+        "docs": ""
+      }
+    },
+    {
+      "id": "butter-bobcat",
+      "name": "Butter-bobcat",
+      "description": "Bobcat security heist for FiveM.",
+      "category": "FiveM",
+      "platform": "FiveM",
+      "language": "Lua",
+      "stars": 0,
+      "owner": "butterchilly",
+      "thumb": "",
+      "links": {
+        "github": "https://github.com/kavyasingh8/Butter-bobcat",
+        "download": "https://github.com/kavyasingh8/Butter-bobcat/releases",
+        "docs": ""
+      }
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "name": "Web Platforms",
+      "desc": "Marketing sites, dashboards and full-stack web apps built with Next.js and modern tooling.",
+      "from": "$400"
+    },
+    {
+      "id": "apps",
+      "name": "Apps & Desktop Tools",
+      "desc": "Cross-platform apps, launchers and utilities for your users or your team.",
+      "from": "$500"
+    },
+    {
+      "id": "ai",
+      "name": "AI & Automation",
+      "desc": "AI-assisted features, workflows and internal automation that save hours every week.",
+      "from": "$400"
+    },
+    {
+      "id": "bots",
+      "name": "Discord Bots & Integrations",
+      "desc": "Production-grade bots, webhooks and API integrations with dashboards.",
+      "from": "$200"
+    },
+    {
+      "id": "api",
+      "name": "Backend & APIs",
+      "desc": "Typed APIs, databases and services engineered to scale.",
+      "from": "$500"
+    },
+    {
+      "id": "ui",
+      "name": "UI / UX Design",
+      "desc": "Design systems, branding and interface design for web, app and in-game.",
+      "from": "$300"
+    },
+    {
+      "id": "fivem",
+      "name": "FiveM Resources",
+      "desc": "Custom scripts, frameworks and in-game UIs built around your community.",
+      "from": "$250"
+    }
+  ],
+  "workflow": [
+    {
+      "icon": "MessagesSquare",
+      "title": "Inquiry",
+      "desc": "Send a brief via the form or Discord. We reply within 24h."
+    },
+    {
+      "icon": "FileText",
+      "title": "Scope",
+      "desc": "Discovery call, then a fixed proposal with timeline & price."
+    },
+    {
+      "icon": "Rocket",
+      "title": "Build",
+      "desc": "Regular demos, shared repo access, async-friendly updates."
+    },
+    {
+      "icon": "Check",
+      "title": "Handover",
+      "desc": "Docs, training, and a 30-day support window included."
+    }
+  ],
+  "timelineNote": "Typical timelines: small features 3-7 days · full platforms 2-8 weeks",
+  "portfolio": [
+    {
+      "id": "case-grade-chain",
+      "title": "Grade Chain: Academic records platform",
+      "summary": "An electronic grade system for schools and universities with a React front-end, Node.js back-end and tamper-evident records.",
+      "tech": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "Blockchain"
+      ],
+      "outcomes": [
+        "Transparent, verifiable grade history",
+        "Role-based access for staff and students",
+        "Open source on GitHub"
+      ],
+      "link": "https://github.com/j5singh/grade-chain"
+    },
+    {
+      "id": "case-launcher",
+      "title": "Community Launcher: Desktop app",
+      "summary": "A Windows launcher that gives game communities a branded entry point with news, updates and one-click connect.",
+      "tech": [
+        "C#",
+        ".NET",
+        "Desktop"
+      ],
+      "outcomes": [
+        "One-click server connect",
+        "Branded news & update feed",
+        "Open source on GitHub"
+      ],
+      "link": "https://github.com/cadburry6969/fivem-launcher"
+    },
+    {
+      "id": "case-ats",
+      "title": "ATS Resume Expert: AI tool",
+      "summary": "An AI-assisted tool that analyses resumes against job descriptions and ATS criteria, with actionable suggestions.",
+      "tech": [
+        "Python",
+        "AI",
+        "LLMs"
+      ],
+      "outcomes": [
+        "Instant match scoring",
+        "Keyword gap analysis",
+        "Built for job seekers"
+      ],
+      "link": "https://github.com/kavyasingh8/Resume-ATS-Expert--main"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Bytecode delivered ahead of schedule and the codebase is genuinely a joy to extend.",
+      "name": "Marcus L.",
+      "role": "Community Lead"
+    },
+    {
+      "quote": "They treated our community like their own. The tooling paid for itself in the first month.",
+      "name": "Priya S.",
+      "role": "Founder"
+    },
+    {
+      "quote": "The free releases got us hooked. Hiring them for paid work was the easiest decision of the quarter.",
+      "name": "Jonas R.",
+      "role": "CTO"
+    },
+    {
+      "quote": "Clean architecture, thorough docs, no surprises. Exactly what a senior team should ship.",
+      "name": "Elena V.",
+      "role": "Engineering Manager"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does Bytecode Studios build?",
+      "a": "Digital solutions end to end: web platforms, apps and desktop tools, AI and automation, bots and integrations, and FiveM game resources. If it's software that solves a real problem, we're interested."
+    },
+    {
+      "q": "Are the open-source projects really free?",
+      "a": "Yes. Our public projects are free to use with full source on GitHub. Check each repository's licence for details."
+    },
+    {
+      "q": "How do I request a custom project?",
+      "a": "Use the inquiry form below. It goes straight to our team Discord. We respond within 24 hours on business days with scope, timeline and pricing."
+    },
+    {
+      "q": "What does pricing look like?",
+      "a": "Small features start around $200. Larger platforms, apps and integrations are quoted after a short discovery call."
+    },
+    {
+      "q": "Can I hire a specific team member?",
+      "a": "Absolutely. Every team card links to that member's own store and Discord. Work with them directly or through the team."
+    }
+  ]
+}

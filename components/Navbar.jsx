@@ -2,10 +2,11 @@
 import { useEffect, useState } from 'react';
 import { Menu, X, Github } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { nav, site } from '@/config/site';
+import { useContent } from './ContentProvider';
 import Logo from './Logo';
 
 export default function Navbar() {
+  const { nav, site } = useContent();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,7 +33,7 @@ export default function Navbar() {
         >
           <a href="#top" className="flex items-center gap-2.5">
             <Logo className="h-8 w-8" />
-            <span className="text-sm font-semibold tracking-tight text-white">
+            <span className="font-display text-lg font-bold uppercase tracking-wide text-white">
               {site.name}
             </span>
           </a>

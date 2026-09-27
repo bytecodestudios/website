@@ -1,11 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
-import { ArrowRight, Users, Sparkles, MessageCircle, Code2 } from 'lucide-react';
+import { ArrowRight, Users, Sparkles, Code2 } from 'lucide-react';
 import BackgroundFX from './BackgroundFX';
-import { site, stats } from '@/config/site';
+import { useContent } from './ContentProvider';
 import Counter from './Counter';
 
 export default function Hero() {
+  const { site, stats, hero } = useContent();
   return (
     <section id="top" className="relative overflow-hidden pt-36 pb-24 md:pt-44 md:pb-32">
       <BackgroundFX />
@@ -17,15 +18,17 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl text-center"
         >
+          <img src="/logo-mark.png" alt="" aria-hidden="true" className="mx-auto mb-8 h-20 w-20 animate-float drop-shadow-[0_0_30px_rgba(97,115,191,0.55)]" />
+
           <span className="eyebrow mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_#34d399]" />
-            A developer collective · est. 2024
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-ice shadow-[0_0_10px_#9dacdf]" />
+            {hero.eyebrow}
           </span>
 
           <h1 className="h-display mt-2">
-            <span className="gradient-text">Independent developers.</span>
+            <span className="gradient-text">{hero.titleTop}</span>
             <br />
-            One collective.
+            {hero.titleBottom}
           </h1>
 
           <p className="lede mx-auto mt-6 max-w-2xl">
@@ -35,7 +38,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <a href="#projects" className="btn-primary">
               <Sparkles className="h-4 w-4" />
-              Explore Projects
+              Explore Our Work
               <ArrowRight className="h-4 w-4" />
             </a>
             <a href="#team" className="btn-secondary">
@@ -45,10 +48,6 @@ export default function Hero() {
             <a href="#contact" className="btn-secondary">
               <Code2 className="h-4 w-4" />
               Request Custom Work
-            </a>
-            <a href={site.discord} target="_blank" rel="noreferrer" className="btn-secondary">
-              <MessageCircle className="h-4 w-4" />
-              Join Discord
             </a>
           </div>
 

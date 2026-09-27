@@ -46,7 +46,7 @@ export default function BackgroundFX() {
           const d2 = dx * dx + dy * dy;
           if (d2 < 140 * 140) {
             const o = 1 - Math.sqrt(d2) / 140;
-            ctx.strokeStyle = `rgba(129,140,248,${o * 0.25})`;
+            ctx.strokeStyle = `rgba(143,160,220,${o * 0.25})`;
             ctx.lineWidth = 0.6;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
@@ -57,7 +57,7 @@ export default function BackgroundFX() {
       }
       // dots
       for (const p of pts) {
-        ctx.fillStyle = 'rgba(199,210,254,0.7)';
+        ctx.fillStyle = 'rgba(219,228,255,0.75)';
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
@@ -75,8 +75,8 @@ export default function BackgroundFX() {
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern [background-size:48px_48px] opacity-[0.18] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
       <canvas ref={ref} className="absolute inset-0 h-full w-full" />
-      <div className="absolute -top-32 left-1/2 h-[600px] w-[1100px] -translate-x-1/2 rounded-full bg-brand-600/20 blur-[120px]" />
-      <div className="absolute bottom-0 right-1/4 h-[420px] w-[680px] rounded-full bg-accent-cyan/10 blur-[120px]" />
+      <div className="absolute -top-32 left-1/2 h-[600px] w-[1100px] -translate-x-1/2 rounded-full bg-brand-600/25 blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 h-[420px] w-[680px] rounded-full bg-accent-steel/10 blur-[120px]" />
     </div>
   );
 }

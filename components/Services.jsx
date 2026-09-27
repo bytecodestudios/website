@@ -1,25 +1,16 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Check, ArrowRight, Clock, MessagesSquare, FileText, Rocket } from 'lucide-react';
+import { ArrowRight, Clock } from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { services } from '@/config/projects';
-
-const workflow = [
-  { icon: MessagesSquare, title: 'Inquiry',  desc: 'Send a brief via the form or Discord. We reply within 24h.' },
-  { icon: FileText,       title: 'Scope',    desc: 'Discovery call, then a fixed proposal with timeline & price.' },
-  { icon: Rocket,         title: 'Build',    desc: 'Weekly demos, shared repo access, async-friendly updates.' },
-  { icon: Check,          title: 'Handover', desc: 'Docs, training, and a 30-day support window included.' },
-];
+import { useContent } from './ContentProvider';
+import { getIcon } from './icons';
 
 export default function Services() {
+  const { sections, services, workflow, timelineNote } = useContent();
   return (
     <section id="services" className="section">
       <div className="container-px">
-        <SectionHeader
-          eyebrow="Custom Development"
-          title="Premium engineering, on demand."
-          lede="Hire the collective for work that needs more than one specialist. Transparent pricing, clear scope, no surprises."
-        />
+        <SectionHeader {...sections.services} />
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
@@ -49,7 +40,9 @@ export default function Services() {
             How we work
           </h3>
           <div className="grid gap-3 md:grid-cols-4">
-            {workflow.map((w, i) => (
+            {workflow.map((w, i) => {
+              const Icon = getIcon(w.icon);
+              return (
               <motion.div
                 key={w.title}
                 initial={{ opacity: 0, y: 12 }}
@@ -61,7 +54,7 @@ export default function Services() {
                 <div className="flex items-center gap-3">
                   <div className="ring-grad rounded-xl p-[1.5px]">
                     <div className="rounded-xl bg-bg-card p-2.5">
-                      <w.icon className="h-4 w-4 text-white" />
+                      <Icon className="h-4 w-4 text-white" />
                     </div>
                   </div>
                   <div className="text-xs uppercase tracking-wider text-white/40">Step {i + 1}</div>
@@ -69,13 +62,14 @@ export default function Services() {
                 <div className="mt-4 text-sm font-medium text-white">{w.title}</div>
                 <div className="mt-1 text-xs leading-relaxed text-white/55">{w.desc}</div>
               </motion.div>
-            ))}
+            );
+            })}
           </div>
 
           <div className="glass mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl p-5">
             <div className="flex items-center gap-3 text-sm text-white/70">
               <Clock className="h-4 w-4 text-brand-300" />
-              Typical timelines: small scripts 3–7 days · custom systems 2–6 weeks
+              {timelineNote}
             </div>
             <a href="#contact" className="btn-primary">
               Start a project <ArrowRight className="h-4 w-4" />

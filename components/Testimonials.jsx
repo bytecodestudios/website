@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { testimonials } from '@/config/projects';
+import { useContent } from './ContentProvider';
 
 export default function Testimonials() {
+  const { sections, testimonials } = useContent();
   const [i, setI] = useState(0);
   const total = testimonials.length;
   const go = (d) => setI((p) => (p + d + total) % total);
@@ -16,15 +17,12 @@ export default function Testimonials() {
   }, [total]);
 
   const t = testimonials[i];
+  if (!t) return null;
 
   return (
     <section className="section">
       <div className="container-px">
-        <SectionHeader
-          eyebrow="Testimonials"
-          title="What the community says."
-          align="center"
-        />
+        <SectionHeader {...sections.testimonials} align="center" />
 
         <div className="relative mx-auto max-w-3xl">
           <div className="glass-strong relative overflow-hidden rounded-3xl p-8 md:p-12">

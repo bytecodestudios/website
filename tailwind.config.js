@@ -8,42 +8,43 @@ module.exports = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: '#070710',
-          soft: '#0c0c18',
-          card: '#10101e',
-          border: '#1c1c2e',
+          DEFAULT: '#060a1c',
+          soft: '#0a1028',
+          card: '#0d1430',
+          border: '#1a2347',
         },
+        // Sampled from the logo: deep navy base, periwinkle/steel-blue circuit, white mark.
         brand: {
-          50:  '#eef2ff',
-          100: '#e0e7ff',
-          200: '#c7d2fe',
-          300: '#a5b4fc',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
+          50:  '#eef1fb',
+          100: '#dde3f6',
+          200: '#c1cbef',
+          300: '#9dacdf',
+          400: '#7f90d2',
+          500: '#6173bf',
+          600: '#4c5da8',
+          700: '#3d4b8a',
+          800: '#2f3a6b',
+          900: '#222b50',
         },
         accent: {
-          cyan: '#22d3ee',
-          violet: '#a78bfa',
-          pink:  '#f472b6',
+          ice: '#dbe4ff',
+          steel: '#8fa0dc',
         },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'var(--font-inter)', 'sans-serif'],
         mono: ['var(--font-jetbrains)', 'ui-monospace', 'monospace'],
       },
       backgroundImage: {
         'grid-pattern':
           "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
         'radial-fade':
-          "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99,102,241,0.25), transparent 70%)",
+          "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(97,115,191,0.25), transparent 70%)",
       },
       boxShadow: {
-        glow: '0 0 40px -10px rgba(99,102,241,0.5)',
-        'glow-lg': '0 0 80px -10px rgba(99,102,241,0.6)',
+        glow: '0 0 40px -10px rgba(97,115,191,0.5)',
+        'glow-lg': '0 0 80px -10px rgba(97,115,191,0.6)',
       },
       animation: {
         'gradient-x': 'gradient-x 8s ease infinite',

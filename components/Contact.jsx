@@ -3,20 +3,21 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { site } from '@/config/site';
+import { useContent } from './ContentProvider';
 
 const projectTypes = [
-  'FiveM Script', 'Discord Bot', 'Web Dashboard', 'UI / UX', 'Automation', 'Backend / API', 'Integration', 'Other',
+  'Website / Web App', 'Mobile / Desktop App', 'AI & Automation', 'Discord Bot / Integration', 'Backend / API', 'UI / UX Design', 'FiveM Resource', 'Other',
 ];
-const budgets   = ['< $500', '$500 – $2k', '$2k – $5k', '$5k – $15k', '$15k+'];
-const timelines = ['ASAP', '1–2 weeks', '1 month', '2–3 months', 'Flexible'];
+const budgets   = ['< $500', '$500-$2k', '$2k-$5k', '$5k-$15k', '$15k+'];
+const timelines = ['ASAP', '1-2 weeks', '1 month', '2-3 months', 'Flexible'];
 
 export default function Contact() {
+  const { site, sections } = useContent();
   const [state, setState] = useState({ loading: false, ok: false, error: '' });
   const [form, setForm] = useState({
     name: '', email: '', discord: '',
     projectType: projectTypes[0], budget: budgets[1], timeline: timelines[1],
-    description: '',
+    description: '', website: '',
   });
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
@@ -25,48 +26,24 @@ export default function Contact() {
     e.preventDefault();
     setState({ loading: true, ok: false, error: '' });
     try {
-      if (site.inquiryWebhook) {
-        const payload = {
-          username: 'Bytecode Inquiries',
-          embeds: [{
-            title: 'New project inquiry',
-            color: 0x6366f1,
-            fields: [
-              { name: 'Name',     value: form.name || '—',    inline: true },
-              { name: 'Email',    value: form.email || '—',   inline: true },
-              { name: 'Discord',  value: form.discord || '—', inline: true },
-              { name: 'Type',     value: form.projectType,    inline: true },
-              { name: 'Budget',   value: form.budget,         inline: true },
-              { name: 'Timeline', value: form.timeline,       inline: true },
-              { name: 'Project',  value: form.description?.slice(0, 1800) || '—' },
-            ],
-            timestamp: new Date().toISOString(),
-          }],
-        };
-        const res = await fetch(site.inquiryWebhook, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-        if (!res.ok) throw new Error('Webhook failed');
-      } else {
-        await new Promise((r) => setTimeout(r, 700));
-      }
+      const res = await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || 'Request failed');
       setState({ loading: false, ok: true, error: '' });
       setForm((f) => ({ ...f, description: '' }));
     } catch (err) {
-      setState({ loading: false, ok: false, error: 'Something went wrong. Please email us directly.' });
+      setState({ loading: false, ok: false, error: `${err.message} You can also email us at ${site.email}.` });
     }
   };
 
   return (
     <section id="contact" className="section">
       <div className="container-px">
-        <SectionHeader
-          eyebrow="Start a project"
-          title="Tell us what you're building."
-          lede="Submit an inquiry below or email us at contact@bytecodestudios.dev. We reply within 24h on business days."
-        />
+        <SectionHeader {...sections.contact} />
 
         <div className="grid gap-6 lg:grid-cols-5">
           {/* form */}
@@ -105,6 +82,9 @@ export default function Contact() {
               </Field>
             </div>
 
+            {/* honeypot: hidden from humans */}
+            <input type="text" tabIndex={-1} autoComplete="off" value={form.website} onChange={set('website')} className="hidden" aria-hidden="true" />
+
             <div className="mt-4">
               <Field label="Project description" required>
                 <textarea
@@ -125,7 +105,7 @@ export default function Contact() {
               </button>
               {state.ok && (
                 <span className="inline-flex items-center gap-2 text-sm text-emerald-400">
-                  <CheckCircle2 className="h-4 w-4" /> Thanks — we'll reply within 24h.
+                  <CheckCircle2 className="h-4 w-4" /> Thanks, we'll reply within 24h.
                 </span>
               )}
               {state.error && (
@@ -171,26 +151,6 @@ export default function Contact() {
         </div>
       </div>
 
-      <style jsx>{`
-        :global(.input) {
-          width: 100%;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(255,255,255,0.10);
-          color: #fff;
-          padding: 0.7rem 0.85rem;
-          border-radius: 0.75rem;
-          font-size: 0.875rem;
-          outline: none;
-          transition: border-color .2s, box-shadow .2s, background-color .2s;
-        }
-        :global(.input::placeholder) { color: rgba(255,255,255,0.4); }
-        :global(.input:focus) {
-          border-color: rgba(99,102,241,0.6);
-          box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
-          background: rgba(255,255,255,0.06);
-        }
-        :global(.input option) { background: #10101e; color: #fff; }
-      `}</style>
     </section>
   );
 }

@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: #070710;
+  background: #060a1c;
   color: #e5e7eb;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -15,18 +15,18 @@ body {
 
 /* Selection */
 ::selection {
-  background: rgba(99, 102, 241, 0.35);
+  background: rgba(97, 115, 191, 0.45);
   color: #fff;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: #0c0c18; }
+::-webkit-scrollbar-track { background: #0a1028; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #312e81, #4338ca);
+  background: linear-gradient(180deg, #222b50, #3d4b8a);
   border-radius: 8px;
 }
-::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+::-webkit-scrollbar-thumb:hover { background: #6173bf; }
 
 @layer components {
   .container-px {
@@ -60,10 +60,10 @@ body {
     @apply inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-brand-300;
   }
   .h-display {
-    @apply text-4xl font-semibold leading-[1.05] tracking-tight text-white md:text-6xl;
+    @apply font-display text-4xl font-semibold leading-[1.05] tracking-tight text-white md:text-6xl;
   }
   .h-section {
-    @apply text-3xl font-semibold tracking-tight text-white md:text-5xl;
+    @apply font-display text-3xl font-semibold tracking-tight text-white md:text-5xl;
   }
   .lede {
     @apply text-base leading-relaxed text-white/60 md:text-lg;
@@ -72,13 +72,13 @@ body {
     @apply glass rounded-2xl p-6 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.05];
   }
   .gradient-text {
-    background: linear-gradient(120deg, #fff 0%, #c7d2fe 40%, #a78bfa 70%, #22d3ee 100%);
+    background: linear-gradient(120deg, #ffffff 0%, #dde3f6 45%, #8fa0dc 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .ring-grad {
-    background: linear-gradient(135deg, rgba(99,102,241,0.6), rgba(34,211,238,0.4));
+    background: linear-gradient(135deg, rgba(97,115,191,0.7), rgba(219,228,255,0.35));
   }
   .noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
@@ -93,3 +93,23 @@ body {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+/* Form inputs (contact + admin) */
+.input {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: #fff;
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, background-color .2s;
+}
+.input::placeholder { color: rgba(255,255,255,0.4); }
+.input:focus {
+  border-color: rgba(97,115,191,0.7);
+  box-shadow: 0 0 0 4px rgba(97,115,191,0.18);
+  background: rgba(255,255,255,0.06);
+}
+.input option { background: #0d1430; color: #fff; }

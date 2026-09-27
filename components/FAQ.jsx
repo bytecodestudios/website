@@ -3,17 +3,15 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { faqs } from '@/config/projects';
+import { useContent } from './ContentProvider';
 
 export default function FAQ() {
+  const { sections, faqs } = useContent();
   const [open, setOpen] = useState(0);
   return (
-    <section className="section">
+    <section id="faq" className="section">
       <div className="container-px">
-        <SectionHeader
-          eyebrow="FAQ"
-          title="Questions, answered."
-        />
+        <SectionHeader {...sections.faq} />
 
         <div className="mx-auto max-w-3xl divide-y divide-white/10 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
           {faqs.map((f, i) => {

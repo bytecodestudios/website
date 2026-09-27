@@ -1,42 +1,37 @@
 import './globals.css';
-import { Inter, JetBrains_Mono } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import { Inter, JetBrains_Mono, Rajdhani } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains', display: 'swap' });
+const rajdhani = Rajdhani({ subsets: ['latin'], weight: ['600', '700'], variable: '--font-display', display: 'swap' });
 
 export const metadata = {
-  title: 'Bytecode Studios — Independent developers. One collective.',
+  title: 'Bytecode Studios | Meaningful digital solutions',
   description:
-    'Bytecode Studios is a collective of independent developers building free tools for the community and premium custom solutions for clients. FiveM, Discord bots, web dashboards, automation and more.',
+    'Bytecode Studios is a team of developers and designers building meaningful digital solutions: web platforms, apps, AI & automation, bots and FiveM game resources.',
   keywords: [
-    'Bytecode Studios', 'FiveM development', 'Discord bots', 'web development',
-    'custom development', 'open source', 'developer collective',
+    'Bytecode Studios', 'web development', 'software development', 'automation', 'AI tools',
+    'Discord bots', 'FiveM development', 'open source', 'digital solutions',
   ],
   openGraph: {
     title: 'Bytecode Studios',
-    description: 'Independent developers. One collective. Building free tools and premium custom solutions.',
+    description: 'Meaningful software, built by people who care.',
     type: 'website',
+    images: ['/banner.png'],
   },
-  metadataBase: new URL('https://bytecodestudios.dev'),
+  metadataBase: new URL('https://bytecodestudios.com'),
 };
 
 export const viewport = {
-  themeColor: '#070710',
+  themeColor: '#060a1c',
   width: 'device-width',
   initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
-      <body className="min-h-screen bg-bg text-white/90 antialiased">
-        <div className="pointer-events-none fixed inset-0 z-0 bg-radial-fade" />
-        <Navbar />
-        <main className="relative z-10">{children}</main>
-        <Footer />
-      </body>
+    <html lang="en" className={`${inter.variable} ${jetbrains.variable} ${rajdhani.variable}`}>
+      <body className="min-h-screen bg-bg text-white/90 antialiased">{children}</body>
     </html>
   );
 }

@@ -1,15 +1,18 @@
 'use client';
 import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Globe, MessageCircle, BookOpen, Youtube, Github, X, ExternalLink } from 'lucide-react';
+import {
+  Search, Globe, MessageCircle, BookOpen, Youtube, Github, X, ExternalLink,
+  ShoppingCart, ShoppingBag, UserRound, Headphones,
+} from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { team, roles } from '@/config/team';
-import { projects } from '@/config/projects';
+import { useContent } from './ContentProvider';
 
 const LinkIcon = ({ kind }) => {
   const map = {
     website: Globe, discord: MessageCircle, docs: BookOpen,
     youtube: Youtube, github: Github,
+    store: ShoppingCart, tebex: ShoppingBag, portfolio: UserRound, support: Headphones,
   };
   const Icon = map[kind] || Globe;
   return <Icon className="h-4 w-4" />;
@@ -18,6 +21,7 @@ const LinkIcon = ({ kind }) => {
 const linkLabel = {
   website: 'Website', discord: 'Discord', docs: 'Docs',
   youtube: 'YouTube', github: 'GitHub',
+  store: 'Store', tebex: 'Tebex', portfolio: 'Portfolio', support: 'Support',
 };
 
 function MemberCard({ m, onOpen }) {
@@ -52,7 +56,7 @@ function MemberCard({ m, onOpen }) {
       </p>
 
       <div className="mt-5 flex flex-wrap gap-1.5">
-        {Object.keys(m.links).slice(0, 5).map((k) => (
+        {Object.keys(m.links).filter((k) => m.links[k]).slice(0, 5).map((k) => (
           <span
             key={k}
             className="inline-flex items-center gap-1 rounded-md border border-white/10 bg-white/[0.04] px-2 py-1 text-[11px] text-white/60"
@@ -66,7 +70,7 @@ function MemberCard({ m, onOpen }) {
   );
 }
 
-function MemberModal({ m, onClose }) {
+function MemberModal({ m, onClose, projects }) {
   if (!m) return null;
   const featured = (m.featured || []).map((id) => projects.find((p) => p.id === id)).filter(Boolean);
   return (
@@ -110,7 +114,7 @@ function MemberModal({ m, onClose }) {
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3">
-            {Object.entries(m.links).map(([k, href]) => (
+            {Object.entries(m.links).filter(([, href]) => href).map(([k, href]) => (
               <a
                 key={k}
                 href={href}
@@ -140,7 +144,7 @@ function MemberModal({ m, onClose }) {
                   >
                     <div>
                       <div className="font-medium text-white">{p.name}</div>
-                      <div className="text-xs text-white/50">{p.platform} · v{p.version}</div>
+                      <div className="text-xs text-white/50">{p.category}{p.language ? ` · ${p.language}` : ''}{p.stars ? ` · ★ ${p.stars}` : ''}</div>
                     </div>
                     <ExternalLink className="h-4 w-4 text-white/40" />
                   </a>
@@ -155,6 +159,7 @@ function MemberModal({ m, onClose }) {
 }
 
 export default function Team() {
+  const { sections, team, roles, projects } = useContent();
   const [q, setQ] = useState('');
   const [role, setRole] = useState('All');
   const [active, setActive] = useState(null);
@@ -170,16 +175,12 @@ export default function Team() {
         m.bio.toLowerCase().includes(ql);
       return matchesRole && matchesQ;
     });
-  }, [q, role]);
+  }, [team, q, role]);
 
   return (
     <section id="team" className="section">
       <div className="container-px">
-        <SectionHeader
-          eyebrow="Team Directory"
-          title="Meet the developers behind Bytecode."
-          lede="Every member runs their own store and brand. Click a card to see their work, links, and how to reach them directly."
-        />
+        <SectionHeader {...sections.team} />
 
         <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="relative w-full md:max-w-sm">
@@ -221,7 +222,7 @@ export default function Team() {
         )}
       </div>
 
-      {active && <MemberModal m={active} onClose={() => setActive(null)} />}
+      {active && <MemberModal m={active} projects={projects} onClose={() => setActive(null)} />}
     </section>
   );
 }
